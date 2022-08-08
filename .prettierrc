@@ -1,0 +1,7 @@
+{
+  "singleQuote": true,
+  "printWidth": 360,
+  "tabWidth": 4,
+  "requireConfig": false,
+  "useTabs": false
+}
