@@ -7,6 +7,7 @@ import { deepmerge } from '@mui/utils';
 import { getDesignTokens } from './theme/designToken';
 import AppRouter from './routing/AppRouter';
 import { useAppSelector } from './store/storehooks';
+import ErrorBoundary from './utils/utilComponent/errorBoundary';
 
 
 function App() {
@@ -39,12 +40,14 @@ function App() {
   theme = responsiveFontSizes(theme);
   return (
     <div className='App'>
+      <ErrorBoundary>
       <ColorModeContext.Provider value={colorMode}>
         <ThemeProvider theme={theme}>
           <CssBaseline />
           <AppRouter user={user}/>
         </ThemeProvider>
       </ColorModeContext.Provider>
+      </ErrorBoundary>
     </div>
   );
 }

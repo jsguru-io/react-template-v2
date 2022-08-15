@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import LoginView from '../features/auth/views/LoginView';
 import ProtectedRoute from './ProtectedRoute';
 import CounterApp from '../features/counter/views/CounterView';
-import { PathConstants } from './path-constants';
+import { PathConstants } from './pathConstants';
 
 interface AppRouterI {
   user: string;

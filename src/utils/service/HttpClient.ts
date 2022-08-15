@@ -2,7 +2,7 @@ import QueryString from 'qs';
 import axios, { AxiosStatic } from 'axios';
 import * as qs from './qs';
 import * as url from './url';
-import { API_BASE_URL } from '../../config/env_config';
+import { API_BASE_URL } from '../../config/envConfig';
 
 class HttpClient {
   private service: AxiosStatic;

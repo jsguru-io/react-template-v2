@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Navigate, Outlet } from 'react-router-dom';
-import { PathConstants } from './path-constants';
+import { PathConstants } from './pathConstants';
 
 interface ProtectedRouteProps {
   user: string;
